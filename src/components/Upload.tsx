@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react";
+import {useState} from "react";
 
 export default function Upload({posts, setPosts}){
 
@@ -27,7 +27,8 @@ export default function Upload({posts, setPosts}){
         })
 
         setPosts(currentPosts);
-
+        setTitle('');
+        setBody('');
     }
 
     return(
